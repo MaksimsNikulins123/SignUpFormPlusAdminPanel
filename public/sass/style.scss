@@ -1,0 +1,491 @@
+
+$minWidth: 320px;
+$maxWidth: 1920px;
+$maxWidthContainer: 1920;
+$mediaBreakPointXXXL: $maxWidthContainer + 12 + px;
+$mediaBreakPointXXL: 1280.98px;
+$mediaBreakPointXL: 1024.98px;
+$mediaBreakPointL: 991.98px;
+$mediaBreakPointM: 767.98px;
+$mediaBreakPointS: 479.98px;
+$mediaBreakPointXS: 375.98px;
+
+
+
+.body{
+    margin: 0 auto;
+}
+
+.container {
+    max-width: $maxWidth;
+    min-width: $minWidth;
+    
+    background-image: url("../images/background.jpg");
+    background-repeat: no-repeat;
+    background-position-x: 100%;
+    @media (max-width: $mediaBreakPointXL) {
+        display: flex;   
+        justify-content: center;
+    }
+    @media (max-width: $mediaBreakPointXS) {
+        background: none;   
+    }   
+}
+.content {
+    max-width: 680px;
+    height: 1080px;
+    background: linear-gradient(180deg, #FFFFFF 0%, #F2F5FA 100%);
+    @media (max-width: $mediaBreakPointXL) {
+        max-width: 480px;
+        background: none;   
+    }
+    @media (max-width: $mediaBreakPointM) {
+        width: 375px;
+        height: 736px;  
+    }
+}
+.header {
+    padding: 100px;
+    @media (max-width: $mediaBreakPointXL) {
+        display: flex;
+        justify-content: center;
+        padding: 30px 0px 0px 0px ;      
+    } 
+    @media (max-width: $mediaBreakPointXS) {
+        height: 66px;
+        padding: 0px;     
+    } 
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    @media (max-width: $mediaBreakPointXL) {
+        padding: 0 auto;
+        width: 680px; 
+        background: #FFFFFF; 
+    }
+    @media (max-width: $mediaBreakPointXS) {
+        width: 100%;   
+    }
+}
+.logo {
+    display: flex;
+    align-items: center;
+    @media (max-width: $mediaBreakPointXL) {
+        padding-left: 20px;
+    }
+
+}
+.logo span{
+    padding-top: 16px;
+    padding-left: 14px;
+    font-family: Arial;
+    font-style: normal;
+    font-weight: bolder;
+    font-size: 16px;
+    color: #131821;
+    @media (max-width: $mediaBreakPointM) {
+        display: none;  
+    }
+     
+}
+.navigation {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 20px;
+    @media (max-width: $mediaBreakPointXL) {
+        padding-top: 0px;
+        padding-right: 20px;
+        align-items: center;
+        
+    }
+}
+.navigation a {
+    padding-left: 31px;
+    font-family: Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    color: #131821;
+    text-decoration: none;
+    @media (max-width: $mediaBreakPointM) {
+        padding-left: 20px;
+        font-size: 14px;
+        line-height: 24px;  
+    }
+}
+.navigation a:hover {
+    padding-left: 31px;
+    font-family: Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    color: #4066A5;
+    text-decoration: none;
+    @media (max-width: $mediaBreakPointXS) {
+        padding-left: 20px;
+        font-size: 14px;
+        line-height: 24px;
+     }
+}
+.navigation a:visited {
+    padding-left: 31px;
+    font-family: Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    color: #233759;
+    text-decoration: none;
+    @media (max-width: $mediaBreakPointXS) {
+        padding-left: 20px;
+        font-size: 14px;
+        line-height: 24px;
+     }
+}
+.formContainer{
+    padding-top: 100px;
+    display: flex;
+    justify-content: center;
+    @media (max-width: $mediaBreakPointXS) {
+        padding-top: 0px;
+        background-image: url(../images/image_summer.jpg);
+        background-repeat: no-repeat;
+    }
+}
+.cup {
+    position: absolute;
+    top: 270px;
+    left: 140px;
+    overflow: hidden;
+    @media (max-width: $mediaBreakPointXL) {
+        position: static;
+        padding: 30px 20px 7px 20px;
+    }
+}
+.form {
+    
+    @media (max-width: $mediaBreakPointXL) {
+        background: linear-gradient(180deg, #FFFFFF 0%, #F2F5FA 100%);
+        margin-bottom: 188px;
+    }
+    @media (max-width: $mediaBreakPointM) {
+        width: 375px; 
+    }
+    @media (max-width: $mediaBreakPointXS) {
+        margin-top: 188px;
+        width: 335px;
+    }
+}
+.title {
+    width: 400px;
+    padding: 33px 40px;
+    @media (max-width: $mediaBreakPointXL) {
+        margin: 0 auto;
+    }
+    @media (max-width: $mediaBreakPointM) {
+        width: 335px; 
+        padding: 20px 0px 0px 0px;
+    }
+    @media (max-width: $mediaBreakPointXS) {
+        width: 295px;
+        padding: 30px 0px 20px 0px;
+        }
+}
+.title h3{
+    margin: 0;
+    font-family: Georgia;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 44px;
+    @media (max-width: $mediaBreakPointM) {
+        font-size: 24px;
+        line-height: 34px;
+        }
+  
+}
+.title p{
+    font-family: Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 28px;
+    @media (max-width: $mediaBreakPointM) {
+        font-size: 14px;
+        line-height: 26px;
+        margin: 0;
+        padding-top: 10px;
+        }
+    
+}
+.form form{
+    padding-bottom: 15px;
+    @media (max-width: $mediaBreakPointM) {
+        padding-top: 17px;
+    }
+    @media (max-width: $mediaBreakPointXS) {
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+}
+.input {
+    position: relative;
+    height: 70px;
+
+    @media (max-width: $mediaBreakPointXL) {
+        padding: 0px 20px ;
+    }
+    @media (max-width: $mediaBreakPointM) {
+        height: 60px;
+    }
+    @media (max-width: $mediaBreakPointXS) {
+    }
+
+}
+.input:hover  button span::before {
+    color: #4066A5;
+    opacity: 1;
+}
+
+.input input{
+    position: absolute;
+    width: 580px;
+    height: 70px;
+    background: #FFFFFF;
+    border-top: 1px solid #E3E3E4;
+    border-bottom: 1px solid #E3E3E4;
+    border-left: 4px solid #4066A5;
+    border-right: none;
+    box-sizing: border-box;
+    padding-left: 40px;
+    padding-top: 5px;
+    font-family: Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    @media (max-width: $mediaBreakPointXL) {
+        width: 400px;
+    }
+    @media (max-width: $mediaBreakPointM) {
+        height: 60px;
+        width: 285px;
+    }
+    @media (max-width: $mediaBreakPointXS) {
+        padding-left: 15px;
+        width: 245px;
+    }
+}
+.input button {
+    position: absolute;
+    left: 580px;
+    background: #FFFFFF;
+    border-top: 1px solid #E3E3E4;
+    border-bottom: 1px solid #E3E3E4;
+    border-right: 1px solid #E3E3E4;
+    border-left: none;
+    width: 82px;
+    height: 70px;
+    cursor: pointer;
+    @media (max-width: $mediaBreakPointXL) {
+        left: 410px;
+        width: 50px;
+        height: 70px;
+    }
+    @media (max-width: $mediaBreakPointM) {
+        height: 60px;
+        left: 305px;
+    }
+    @media (max-width: $mediaBreakPointXS) {
+        left: 265px;
+        height: 60px;
+    }
+}
+.input button span::before {
+    padding-right: 20px;
+    width: 24px;
+    height: 14px;
+    color: #131821;
+    opacity: 0.3;
+    @media (max-width: $mediaBreakPointXS) {
+        padding-right: 5px;
+    }
+}
+.input button:hover  span::before {
+    padding-right: 20px;
+    color: #4066A5;
+    opacity: 1;
+}
+#error {
+    height: 20px;
+    color: red;
+    @media (max-width: $mediaBreakPointXL) {
+      padding-left: 20px;
+    }
+    @media (max-width: $mediaBreakPointXS) {
+        height: 18px;
+      }
+}
+.checkbox_block {
+    display: flex;
+    width: 400px;
+    padding: 34px 37px;
+    @media (max-width: $mediaBreakPointM) {
+        width: 295px;
+    }
+    @media (max-width: $mediaBreakPointXS) {
+        padding: 0px 0px 0px 17px;
+      }
+}
+.checkbox_block input:before {
+    padding-left: -10px;
+    position: relative;
+    display: block;
+    width: 25px;
+    height: 25px;
+    background: #4066A5;
+    border-radius: 3px;
+    content: "";
+    
+}
+.checkbox_block input:checked:before {
+    position: relative;
+    display: block;
+    width: 25px;
+    height: 25px;
+    background: #4066A5;
+    border-radius: 3px;
+    content: "";
+    background-image: url(/public/images/ic_checkmark.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.rules {
+      padding-top: 4px;
+      padding-left: 24px;
+      font-family: Arial;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 28px;
+        color: #6A707B;
+}
+.rules span {
+    color: #131821;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.socials {
+      padding-top: 35px;
+      padding-bottom: 35px;
+      display: flex;
+      justify-content: center;
+      width: 400px;
+      margin: 0 auto;
+      border-top: 1px solid #E3E3E4;
+      @media (max-width: $mediaBreakPointM) {
+        width: 335px;   
+        }
+      @media (max-width: $mediaBreakPointXS) {
+        width: 295px;
+        padding-top: 20px;
+        padding-bottom: 30px;
+        margin-top: 20px;
+    
+      }
+}
+.socials a{
+    text-decoration: none;
+    align-self: center; 
+    color: #131821;
+    opacity: 0.3;   
+}
+.socials__icons {
+    margin: 10px;
+    width: 46px;
+    height: 46px;
+    border: 2px solid #E2E3E4;
+    border-radius: 23px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
+.facebook {
+    a{
+        width: 8px;
+        height:16px
+    } 
+}
+.facebook:hover {
+    border: 2px solid #4267B2;
+    background: #4267B2;
+    box-shadow: 0px 20px 40px rgba(19, 24, 33, 0.3);
+    a{
+        color: #FFFFFF;
+        opacity: 1;
+    }
+}
+.facebook:active {
+    border: 2px solid #2F4A80;
+    background: #2F4A80;
+} 
+
+.instagram {
+    a{  
+        width:16px;
+        height:16px
+    }
+} 
+.instagram:hover { 
+    border: 2px solid #C13584; 
+    background: #C13584;
+    box-shadow: 0px 20px 40px rgba(19, 24, 33, 0.3);
+    a{
+        color: #FFFFFF;
+        opacity: 1;
+    }
+}
+.instagram:active {
+    border: 2px solid #8F2762;
+    background: #8F2762;
+}
+.twitter {
+    a{
+        width: 18px;
+        height:13px
+    }
+} 
+.twitter:hover {
+    border: 2px solid #1DA1F2;
+    background: #1DA1F2;
+    box-shadow: 0px 20px 40px rgba(19, 24, 33, 0.3);
+    a{
+        color: #FFFFFF;
+        opacity: 1;
+    }
+}
+.twitter:active {
+    border: 2px solid #177FBF;
+    background: #177FBF;
+}   
+.youtube {
+    a{
+        width: 22px;
+        height:15px
+    }
+}
+
+.youtube:hover {
+    border: 2px solid #FF0000;
+    background: #FF0000;
+    box-shadow: 0px 20px 40px rgba(19, 24, 33, 0.3);
+    a{
+        color: #FFFFFF;
+        opacity: 1;
+    }
+}
+.youtube:active {
+    border: 2px solid #CC0000;
+    background: #CC0000;
+}

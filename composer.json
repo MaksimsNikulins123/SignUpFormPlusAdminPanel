@@ -1,0 +1,19 @@
+{
+    "name": "user/react-server-side",
+    "description": "server",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Maksims Nikulins",
+            "email": "nikulins.maksims@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "liw\\" : ""
+        }
+    }
+}
